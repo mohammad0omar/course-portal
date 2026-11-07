@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Reset password{% endblock %}
+{% block content %}
+<h1>Reset password</h1>
+{% if error %}<p class="error">{{ error }}</p>{% endif %}
+{% if done %}
+<p>Password changed. You can sign in now.</p>
+<p><a href="/login">Sign in</a></p>
+{% elif not invalid %}
+<form method="post">
+  <label>New password <input name="new_password" type="password" minlength="8"></label>
+  <button type="submit">Change password</button>
+</form>
+{% endif %}
+{% endblock %}

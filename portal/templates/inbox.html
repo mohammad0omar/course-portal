@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Inbox{% endblock %}
+{% block content %}
+<h1>Inbox</h1>
+{% for m in mails %}
+<article class="mail">
+  <h2>{{ m.subject }}</h2>
+  <small>{{ m.sent_at }}</small>
+  <p>{{ m.body }}</p>
+</article>
+{% else %}
+<p>No messages.</p>
+{% endfor %}
+{% endblock %}

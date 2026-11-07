@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Registrar{% endblock %}
+{% block content %}
+<h1>Registrar</h1>
+<h2>Add a TA</h2>
+{% for c in courses %}
+<form method="post" action="/courses/{{ c.id }}/staff/add">
+  <label>{{ c.code }}: <input name="username" placeholder="username"></label>
+  <button type="submit">Add a TA</button>
+</form>
+{% endfor %}
+{% endblock %}

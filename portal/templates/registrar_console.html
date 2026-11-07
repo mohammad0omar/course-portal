@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Registrar console{% endblock %}
+{% block content %}
+<h1>Registrar console</h1>
+<table>
+  <tr><th>User</th><th>Role</th></tr>
+  {% for u in users %}<tr><td>{{ u.username }}</td><td>{{ u.role }}</td></tr>{% endfor %}
+</table>
+<h2>Set role</h2>
+<form method="post" action="/registrar-x9k2/role">
+  <input name="username" placeholder="username">
+  <input name="role" placeholder="role">
+  <button type="submit">Set role</button>
+</form>
+<h2>Enroll</h2>
+<form method="post" action="/registrar-x9k2/enroll">
+  <input name="username" placeholder="username">
+  <input name="course_id" placeholder="course id">
+  <button type="submit">Enroll</button>
+</form>
+{% endblock %}

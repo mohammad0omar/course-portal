@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Gradebook{% endblock %}
+{% block content %}
+<h1>Gradebook: {{ course.code }}</h1>
+<table>
+  <tr><th>Student</th><th>Assignment</th><th>Grade</th><th>Released</th></tr>
+  {% for s in subs %}
+  <tr><td>{{ s.student.username }}</td><td>{{ s.assignment.title }}</td>
+      <td>{{ s.grade or "-" }}</td><td>{{ "yes" if s.released else "no" }}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

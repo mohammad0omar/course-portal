@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Confirm grade change{% endblock %}
+{% block content %}
+<h1>Confirm grade change</h1>
+<p>Change the grade of submission {{ sub.id }} from {{ sub.grade }} to {{ grade }}?</p>
+<form method="post" action="/submissions/{{ sub.id }}/change/confirm">
+  <input type="hidden" name="grade" value="{{ grade }}">
+  <input type="hidden" name="confirmed" value="true">
+  <button type="submit">Confirm</button>
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Submission{% endblock %}
+{% block content %}
+<h1>Submission {{ sub.id }}</h1>
+<p>{{ sub.assignment.title }} ({{ sub.course.code }}), by {{ sub.student.username }}</p>
+<p>{{ sub.body }}</p>
+<p>Grade: {{ sub.grade or "not graded" }}</p>
+<p>Feedback: {{ sub.feedback }}</p>
+{% endblock %}

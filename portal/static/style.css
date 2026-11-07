@@ -1,0 +1,9 @@
+body { font-family: system-ui, sans-serif; margin: 0; color: #1a1a1a; background: #fafafa; }
+header { display: flex; justify-content: space-between; padding: 0.75rem 1.5rem; background: #1f3a5f; }
+header a, header span { color: #fff; margin-left: 1rem; text-decoration: none; }
+main { max-width: 48rem; margin: 1.5rem auto; padding: 0 1rem; }
+label { display: block; margin: 0.75rem 0; }
+input { display: block; padding: 0.4rem; width: 100%; max-width: 20rem; }
+button { padding: 0.4rem 1rem; }
+.error { color: #b00020; }
+.mail { border: 1px solid #ccc; padding: 0.5rem 1rem; margin: 0.75rem 0; background: #fff; }
