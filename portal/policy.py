@@ -1,6 +1,6 @@
 """Access control policy for the Course Portal.
 
-Part 3 of Level 4 asks you to write this file. Read slides 36 to 45 first.
+Part 4 of Level 4 asks you to write this file.
 
   ROLE_PERMISSIONS   RBAC: which permissions each role could ever use
   CONDITIONS         ABAC: one function per permission, (user, obj, ctx) -> bool

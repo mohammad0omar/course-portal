@@ -1,4 +1,4 @@
-"""The CSRF attacks from Part 3 and the design from the CSRF deck (slides 19 to 23).
+"""The CSRF attacks from Part 3 and the CSRF token design from Part 4.
 
 The token lives in the session as session["csrf_token"]. A page sends it back
 in a form field named csrf_token, a script in an X-CSRF-Token header.

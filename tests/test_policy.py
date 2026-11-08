@@ -1,4 +1,4 @@
-"""Policy tests. Red when you get the portal; green when Part 3 is done."""
+"""Policy tests. Red when you get the portal; green when Part 4 is done."""
 import pytest
 
 from portal.policy import can
